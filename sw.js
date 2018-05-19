@@ -3,7 +3,6 @@ var cacheName = 'js13kPWA-v1';
 var appShellFiles = [
   '/Adi-app/',
   '/Adi-app/index.html',
-  '/pwa-examples/js13kpwa/app.js',
   '/Adi-app/style.css',
   '/Adi-app/js13kgames.png',
   '/Adi-app/icon-192.png',
