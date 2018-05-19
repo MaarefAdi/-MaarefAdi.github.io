@@ -1,0 +1,58 @@
+
+
+#numKeyboard {
+    width: 104px;
+    border: 2px black solid;
+    background: gray;
+    border-radius: 5px;
+    position: absolute;
+    left: 52%;
+    top: 39%;
+}
+
+#numKeyboard button {
+    width: 34px;
+}
+
+#userBox {
+    width: 240px;
+    background: gray;
+    border: 1px black solid;
+    border-radius: 5px;
+    position: absolute;
+    left: 52%;
+    top: 20%;
+
+}
+
+#userBox button {
+    width: 80px;
+}
+#formLogin div{
+    width: 200px;
+}
+
+#formLogin{
+    position: absolute;
+    left: 40%;
+    top: 15%;
+}
+
+
+
+
+
+#left img{
+    height:  400px;
+}
+#table img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+ #arrOfUsers{
+  margin-top: 20px;
+}
+#form {
+  margin-top: 7%;
+}
