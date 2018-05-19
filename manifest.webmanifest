@@ -3,28 +3,28 @@
   "description": "Initiating my first web progressive application!",
   "short_name": "Adi_First_app",
   "icons": [{
-    "src": "img/it-can.jpg",
+    "src": "it-can.jpg",
     "sizes": "64x64",
     "type": "image/jpg"
   },
   {
-    "src": "img/it-can.jpg",
+    "src": "it-can.jpg",
     "sizes": "32x32",
     "type": "image/jpg"
   },
   {
-    "src": "img/icon-192.png",
+    "src": "icon-192.png",
     "sizes": "192x192",
     "type": "image/png"
   },
   {
-    "src": "img/icon-512.png",
+    "src": "icon-512.png",
     "sizes": "512x512",
     "type": "image/png"
   }
 ],
 
-  "start_url": "/adi/index.html",
+  "start_url": "index.html",
   "display": "fullscreen",
   "theme_color": "aliceblue",
   "background_color": "#3367D6",
