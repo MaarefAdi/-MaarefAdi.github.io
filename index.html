@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="cssFile/style.css" />
+    <link rel="stylesheet" href="cssFile/bootstrap.css" />
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <title>User Interface</title>
+</head>
+
+<body>
+  <header>
+      <nav class="container navbar navbar-expand-sm navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+          <img src="img/glyphicons-21-home.png" width="30" height="30" alt="">
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item ">
+                      <a class="nav-link active" href="index.html">Acceil <span class="sr-only">(current)</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link" href="formInsc.html">Inscription </span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="ArrayOfUsers.html">Utilisateurs </span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">Aide</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">chercher</button>
+              </form>
+          </div>
+      </nav>
+  </header>
+    <main>
+        <div class="container  d-flex justify-content-center bg-light">
+
+
+
+            <div class=" col-sm-4 bg-light">
+
+                <!-- +++++++++++ Formulaire *************-->
+                <form autocomplete="off">
+
+                    <div id="userProfPhoto" class="form-group form-check d-flex justify-content-center">
+
+                      <img src="img/userPhoto.png" width="80" height="90" border-radius="50%"/> </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Utilsateur</label>
+                        <input type="text" class="form-control user" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom Utilisateur" required>
+                    </div>
+                    <div class="form-group" id="pwd">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control pwd" id="exampleInputPassword1" placeholder="Password" required p>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Se souvient de moi</label>
+                    </div>
+                    <div class="form-group form-check d-flex justify-content-center">
+                        <input type="submit" role="button" class="btn btn-primary btn-md" id="submit">
+                    </div>
+                    <div class="form-group form-check d-flex justify-content-center">
+                      <p class="text-muted">Vous n'avez pas de compte ?</p>
+                    </div>
+                    <div class="form-group form-check d-flex justify-content-center">
+                      <a href="formInsc.html"><button type="button" class="btn btn-link">Créer un compte</button></a>
+                    </div>
+                    <!--***************** Alert Message ********************-->
+                    <div class="form-group form-check alert alert-danger" role="alert" id="alert" hidden>
+                    <strong>Désolé!</strong> Mots de passe incorrecte
+                    </div>
+                    <!--********************************************-->
+
+                </form>
+                <!--********************************************-->
+                <!--***************** keyboard *******************-->
+                <div id="numKeyboard" hidden>
+                </div>
+
+                <!--********************************************-->
+                 <button class="btn btn-success" id="installAppBtn">Télecharger App</button>
+
+                <!--**************** Users Box *********************-->
+                <div id="userBox" hidden></div>
+                <!--********************************************-->
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+	</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jsFile/jquery-3.3.1.min.js"></script>
+    <script src="jsFile/popper.min.js"></script>
+    <script src="jsFile/bootstrap.js"></script>
+    <script src="jsFile/program.js"></script>
+
+
+</body>
+
+
+</html>
