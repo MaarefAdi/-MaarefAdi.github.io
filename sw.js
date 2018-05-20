@@ -8,9 +8,6 @@ var appShellFiles = [
   '/Adi-app/program.js',
   '/Adi-app/popper.min.js',
   '/Adi-app/jquery-3.3.1.min.js',
-  '/Adi-app/js13kgames.png',
-  '/Adi-app/icon-192.png',
-  '/Adi-app/icon-512.png'
 ];
 
 // Installing Service Worker
