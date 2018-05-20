@@ -3,7 +3,7 @@ var cacheName = 'AdiPWA-v1';
 var appShellFiles = [
   '/Adi-app/index.html',
   '/Adi-app/style.css',
-  '/Adi-app/bootstap.css',
+  '/Adi-app/bootstrap.css',
   '/Adi-app/bootstrap.js',
   '/Adi-app/program.js',
   '/Adi-app/popper.min.js',
