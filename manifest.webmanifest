@@ -24,7 +24,7 @@
   }
 ],
 
-  "start_url": "index.html",
+  "start_url": "/Adi-app/index.html",
   "display": "fullscreen",
   "theme_color": "aliceblue",
   "background_color": "#3367D6",
