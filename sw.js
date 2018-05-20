@@ -1,9 +1,13 @@
 // Files to cache
-var cacheName = 'js13kPWA-v1';
+var cacheName = 'AdiPWA-v1';
 var appShellFiles = [
-  '/Adi-app/',
   '/Adi-app/index.html',
   '/Adi-app/style.css',
+  '/Adi-app/boostrap.css',
+  '/Adi-app/bootstrap.js,
+  '/Adi-app/program.js',
+  '/Adi-app/popper.min.js'
+  '/Adi-app/jquery-3.3.1.min.js'
   '/Adi-app/js13kgames.png',
   '/Adi-app/icon-192.png',
   '/Adi-app/icon-512.png'
