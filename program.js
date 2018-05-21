@@ -110,8 +110,8 @@ if ('serviceWorker' in navigator) {
 }
 
 
+let deferredPrompt;
 
-let btnAdd=document.getElementById('installAppBtn');
 // Prevent the Event hundler fired from Chrome to prompt the User to install Web App
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
@@ -120,7 +120,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   btnAdd.style.display = 'block';
 });
 
-
+let btnAdd=document.getElementById('installAppBtn');
 // Event Click btn (Telecharger App) fired by the User to Download the Web App
 btnAdd.addEventListener('click', (e) => {
   // hide our user interface that shows our A2HS button
