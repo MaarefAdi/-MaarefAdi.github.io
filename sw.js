@@ -1,5 +1,5 @@
 // Files to cache
-var cacheName = 'AdiPWA-v1';
+var cacheName = 'AdiPWA-v2';
 var appShellFiles = [
   '/Adi-app/index.html',
   '/Adi-app/style.css',
