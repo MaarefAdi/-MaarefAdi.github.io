@@ -112,16 +112,16 @@ if ('serviceWorker' in navigator) {
 
 let deferredPrompt;
 
-// Prevent the Event hundler fired from Chrome to prompt the User to install Web App
 window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
+  // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI notify the user they can add to home screen
-  btnAdd.style.display = 'block';
+ btnAdd.style.display = 'block';
 });
 
-let btnAdd=document.getElementById('installAppBtn');
-// Event Click btn (Telecharger App) fired by the User to Download the Web App
+let btnAdd= document.getElementById('installAppBtn');
 btnAdd.addEventListener('click', (e) => {
   // hide our user interface that shows our A2HS button
   btnAdd.style.display = 'none';
