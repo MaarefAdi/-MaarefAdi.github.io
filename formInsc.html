@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="cssFile/style.css" />
+    <link rel="stylesheet" href="cssFile/bootstrap.css" />
+
+    <title>Interface Utilisateur</title>
+</head>
+
+<body>
+  <div class="container">
+   <header>
+        <nav class=" navbar navbar-expand-sm navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class="navbar-brand" href="index.html">
+            <img src="img/glyphicons-21-home.png" width="30" height="30" alt="Page d'acceil" title="Acceil">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Acceil </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="formInsc.html">Inscription <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ArrayOfUsers.html">Utilisateurs </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Aide</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">chercher</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+        <!-- +++++++  Message de Salutation ++++++++ -->
+
+
+        <!--********************************************-->
+
+        <div class=" bg-light d-flex justify-content-center">
+            <!-- ****** Formulaire d'inscription +**********-->
+            <form id="formInsc" autocomplete="off">
+                <fieldset>
+                    <legend>Formulaire d'inscription</legend>
+                    <div class="form-group row ">
+                        <label for="inputPseudo" class="col-sm-4 col-form-label">Pseudo *</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputPseudo" placeholder="Pseudo" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-4 col-form-label">Mot de passe *</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputConfPassword" class="col-sm-4 col-form-label">Confirmation de mot de passe *</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="inputConfPassword" placeholder="Password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="imgProf" class="col-sm-4 col-form-label">Image de Profile *</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="imgProf" placeholder="Exp url:   adi.png" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+
+                        </div>
+                        <div class="col-sm-4">
+                           <input type="submit" role="button" class="btn btn-primary btn-md-12" id="submitFormInsc" >
+                        </div>
+
+                        <div class="alert alert-danger col-sm-3" role="alert" id="alertIns" hidden="hidden" >
+                        </div>
+
+                    </div>
+                    </fieldset>
+                  </form>
+
+            <!--********************************************-->
+          </div>
+        </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jsFile/jquery-3.3.1.min.js"></script>
+    <script src="jsFile/popper.min.js"></script>
+    <script src="jsFile/bootstrap.js"></script>
+    <script src="jsFile/pgFormIns.js"></script>
+
+
+
+</body>
+
+
+</html>
