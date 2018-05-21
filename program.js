@@ -111,7 +111,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-/*
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -141,7 +140,8 @@ btnAdd.addEventListener('click', (e) => {
       deferredPrompt = null;
     });
 });
-*/
+
+/*
 // Request Permission from User to get Notified with Event Hundler Click in Button notification
 var button = document.getElementById("notifications");
 button.addEventListener('click', function(e) {
@@ -151,7 +151,7 @@ button.addEventListener('click', function(e) {
         }
     });
 });
-
+*/
   // fonction pour Dynamiser le tableau des Users :
   function creatUserBox() {
       $("#userBox").html("");
