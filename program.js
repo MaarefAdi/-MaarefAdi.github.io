@@ -123,7 +123,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 let btnAdd= document.getElementById('installAppBtn');
 btnAdd.addEventListener('click', (e) => {
-  consol.log('click Event');
+  console.log('click Event');
   // hide our user interface that shows our A2HS button
   btnAdd.style.display = 'none';
   // Show the prompt
