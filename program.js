@@ -96,6 +96,8 @@
           id: "ok"
     }
 ];
+
+
 // Rigister the Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -137,6 +139,15 @@ btnAdd.addEventListener('click', (e) => {
         console.log('User dismissed the A2HS prompt');
       }
       deferredPrompt = null;
+    });
+});
+// Request Permission from User to get Notified with Event Hundler Click in Button notification
+var button = document.getElementById("notifications");
+button.addEventListener('click', function(e) {
+    Notification.requestPermission().then(function(result) {
+        if(result === 'granted') {
+            randomNotification();
+        }
     });
 });
 
