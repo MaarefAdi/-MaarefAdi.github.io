@@ -110,8 +110,9 @@ if ('serviceWorker' in navigator) {
 }
 
 
+
+let btnAdd=document.getElementById('installAppBtn');
 // Prevent the Event hundler fired from Chrome to prompt the User to install Web App
-let deferredPrompt=document.getElementById('installAppBtn');
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
