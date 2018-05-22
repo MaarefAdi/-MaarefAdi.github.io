@@ -141,7 +141,7 @@ btnAdd.addEventListener('click', (e) => {
     });
 });
 
-/*
+
 // Request Permission from User to get Notified with Event Hundler Click in Button notification
 var button = document.getElementById("notifications");
 button.addEventListener('click', function(e) {
@@ -151,7 +151,20 @@ button.addEventListener('click', function(e) {
         }
     });
 });
-*/
+
+
+//Send to the user a notifcation 
+function randomNotification() {
+    var notifBody = 'Created by Adi.';
+    var notifImg = 'icon-192.png';
+    var options = {
+        body: notifBody,
+        icon: notifImg
+    }
+    var notif = new Notification(notifTitle, options);
+    setTimeout(randomNotification, 30000);
+}
+
   // fonction pour Dynamiser le tableau des Users :
   function creatUserBox() {
       $("#userBox").html("");
