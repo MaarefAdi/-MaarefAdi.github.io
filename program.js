@@ -98,7 +98,7 @@
 ];
 
 // Make the registration of the Service Worker after the click of the User in button ( Ajouter App)
-
+let btnAdd = document.getElementById('installAppBtn');
 btnAdd.addEventListener('click', (e) => {
   console.log('click Event');
   // Rigister the Service Worker
