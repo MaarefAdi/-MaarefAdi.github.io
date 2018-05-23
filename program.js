@@ -97,8 +97,11 @@
     }
 ];
 
+// Make the registration of the Service Worker after the click of the User in button ( Ajouter App)
 
-// Rigister the Service Worker
+btnAdd.addEventListener('click', (e) => {
+  console.log('click Event');
+  // Rigister the Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/Adi-app/sw.js').then(function(registration) {
@@ -111,20 +114,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can add to home screen
- btnAdd.style.display = 'block';
-});
-
-let btnAdd= document.getElementById('installAppBtn');
-btnAdd.addEventListener('click', (e) => {
-  console.log('click Event');
   // hide our user interface that shows our A2HS button
   btnAdd.style.display = 'none';
   // Show the prompt
@@ -140,6 +129,19 @@ btnAdd.addEventListener('click', (e) => {
       deferredPrompt = null;
     });
 });
+// Prevent the event 'beforeinstallprompt' fired by google to UI to prompt the user to Install the web app 
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can add to home screen
+ btnAdd.style.display = 'block';
+});
+
+
+
 
 
 // Request Permission from User to get Notified with Event Hundler Click in Button notification
