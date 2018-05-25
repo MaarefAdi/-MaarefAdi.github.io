@@ -31,7 +31,7 @@ self.addEventListener('push', function(event) {
 // Show a notification with title ‘ServiceWorker Cookbook’ and use the payload as the body.
 
 
-      self.registration.showNotification('ServiceWorker Cookbook', {
+      self.registration.showNotification('PWA Notif', {
         body: payload,
       });
     })
