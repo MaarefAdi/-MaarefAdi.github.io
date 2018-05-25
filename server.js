@@ -15,7 +15,7 @@ if (!process.env.VAPID_PUBLIC_KEY || !process.env.VAPID_PRIVATE_KEY) {
 // Set the keys used for encrypting the push messages.
 
 webPush.setVapidDetails(
-  'https://maarefadi.github.io/Adi-app/',
+  'https://maarefadi.github.io/',
   process.env.VAPID_PUBLIC_KEY,
   process.env.VAPID_PRIVATE_KEY
 );
