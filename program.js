@@ -97,53 +97,10 @@
     }
 ];
 
-// Make the registration of the Service Worker after the click of the User in button ( Ajouter App)
-let btnAdd = document.getElementById('installAppBtn');
-btnAdd.addEventListener('click', (e) => {
-  console.log('click Event');
-  // Rigister the Service Worker
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/Adi-app/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
-  // hide our user interface that shows our A2HS button
-  btnAdd.style.display = 'none';
-  // Show the prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  deferredPrompt.userChoice
-    .then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-      deferredPrompt = null;
-    });
-});
-// Prevent the event 'beforeinstallprompt' fired by google to UI to prompt the user to Install the web app 
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can add to home screen
- btnAdd.style.display = 'block';
-});
 
 
 
-
-
+/*
 // Request Permission from User to get Notified with Event Hundler Click in Button notification
 var button = document.getElementById("notifications");
 button.addEventListener('click', function(e) {
@@ -166,7 +123,7 @@ function randomNotification() {
     var notif = new Notification(notifTitle, options);
     setTimeout(randomNotification, 30000);
 }
-
+*/
   // fonction pour Dynamiser le tableau des Users :
   function creatUserBox() {
       $("#userBox").html("");
