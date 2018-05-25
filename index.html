@@ -93,9 +93,14 @@
                 <div id="numKeyboard" hidden>
                 </div>
 
-                <!--*************** id="installAppBtn" *****************************-->
-                 <button class="btn btn-success" id="installAppBtn">Télecharger App</button>
-		 <button class="btn btn-success" id="notifications">Get The permession to notif</button>
+                <!--***************  *****************************-->
+             <form>
+		Notification payload: <input id='notification-payload' type='text' value='Insert here a payload'></input>
+		Notification delay: <input id='notification-delay' type='number' value='5'></input> seconds
+		Notification Time-To-Live: <input id='notification-ttl' type='number' value='0'></input> seconds
+	     </form>
+
+<button id="doIt">Request sending a notification!</button>
 		    
 
                 <!--**************** Users Box *********************-->
