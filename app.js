@@ -13,7 +13,7 @@ function urlBase64ToUint8Array(base64String) {
   for (var i = 0; i < rawData.length; ++i) {
     outputArray[i] = rawData.charCodeAt(i);
   }
-  return outputArray;
+  return outputArray;}
 
 
 // Rigister the Service Worker
