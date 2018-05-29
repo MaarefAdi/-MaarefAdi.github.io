@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="manifest" href="Adi-app.webmanifest">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBf93BVzxnWkD0XbYbdapel5s_iq8reRm8",
+	    authDomain: "adi-app-b3698.firebaseapp.com",
+	    databaseURL: "https://adi-app-b3698.firebaseio.com",
+	    projectId: "adi-app-b3698",
+	    storageBucket: "adi-app-b3698.appspot.com",
+	    messagingSenderId: "642187156042"
+	  };
+	  firebase.initializeApp(config);
+    </script>
 
     <title>User Interface</title>
 </head>
@@ -125,19 +138,7 @@
 	</footer>
 
 
-<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBf93BVzxnWkD0XbYbdapel5s_iq8reRm8",
-    authDomain: "adi-app-b3698.firebaseapp.com",
-    databaseURL: "https://adi-app-b3698.firebaseio.com",
-    projectId: "adi-app-b3698",
-    storageBucket: "",
-    messagingSenderId: "642187156042"
-  };
-  firebase.initializeApp(config);
-</script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="jquery-3.3.1.min.js"></script>
