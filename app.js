@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-let deferredPrompt;
+/*let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -64,4 +64,4 @@ function randomNotification() {
 	}
 	var notif = new Notification(notifTitle, options);
 	setTimeout(randomNotification, 30000);
-}
+}*/
